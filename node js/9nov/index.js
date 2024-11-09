@@ -9,9 +9,9 @@
 // }).listen(5000); 
 
 
-//create/write file append
+//appendFile
 const fs=require("fs");
-fs.appendFile("new1.pdf","hello i am pawan i am from bhopal",(err)=>{
+fs.appendFile("new1.pdf"," hello i am pawan i am from bhopal",(err)=>{
     if(err) throw err;
     console.log("succesfully created "); 
 });
