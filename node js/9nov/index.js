@@ -1,8 +1,19 @@
-const http=require("http");
+//read file
+// const http=require("http");
+// const fs=require("fs");
+// http.createServer((req,res)=>{
+// fs.readFile("pawan.txt",(err,data)=>{
+//     res.write(data);
+//     res.end();
+// })
+// }).listen(5000); 
+
+//create/write file
 const fs=require("fs");
-http.createServer((req,res)=>{
-fs.readFile("pawan.txt",(err,data)=>{
-    res.write(data);
-    res.end();
-})
-}).listen(5000); 
+fs.appendFile("new1.pdf","hello i am pawan i am from bhopal",(err)=>{
+    if(err) throw err;
+
+    console.log("succesfully created ");
+
+    
+});
