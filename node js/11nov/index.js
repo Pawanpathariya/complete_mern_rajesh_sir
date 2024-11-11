@@ -16,9 +16,17 @@ fs.writeFile("pawam.txt3" , "welcome to bhopal" , (err)=>{
 });
 */
 
+/*
 //unlink() delete file 
 const fs=require("fs");
 fs.unlink("pawam.txt",(err)=>{
     if(err) throw err;
     console.log("deleted");
+})
+*/
+
+const fs=require("fs");
+fs.rename("raman.txt","pawan.txt",(err)=>{
+    if(err) throw err;
+    console.log("file name changed");
 })
