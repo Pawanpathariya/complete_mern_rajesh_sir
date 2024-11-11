@@ -12,7 +12,10 @@ fs.readFile("pawan.txt",(err,data)=>{
 
 //appendFile
 const fs=require("fs");
-fs.appendFile("new1.pdf"," hello i am pawan i am from bhopal",(err)=>{
+fs.appendFile("new1.txt","hello good morning ",(err,data)=>{
     if(err) throw err;
-    console.log("succesfully created "); 
+    console.log("successful added");
 });
+
+
+;
