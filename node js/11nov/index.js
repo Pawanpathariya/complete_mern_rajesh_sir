@@ -25,8 +25,9 @@ fs.unlink("pawam.txt",(err)=>{
 })
 */
 
+//rename()
 const fs=require("fs");
-fs.rename("raman.txt","pawan.txt",(err)=>{
+fs.rename("pawan.txt","gagan.txt",(err)=>{
     if(err) throw err;
     console.log("file name changed");
 })
