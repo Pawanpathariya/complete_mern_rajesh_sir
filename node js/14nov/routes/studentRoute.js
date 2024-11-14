@@ -1,6 +1,5 @@
 const express=require("express")
 const route=express.Router();
-
 route.get("/stuinfo",(req,res)=>{
     res.send("this is student info")
 })
@@ -13,5 +12,4 @@ route.get("/sturesult",(req,res)=>{
 route.get("/stufees",(req,res)=>{
     res.send("This is student fees")
 })
-
 module.exports=route;
